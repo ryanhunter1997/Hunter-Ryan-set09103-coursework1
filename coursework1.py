@@ -18,9 +18,22 @@ def art():
 def met():
     return render_template('metal.html'), 200
 
+#Led Zep Albums
 @app.route('/ledzep')
 def led():
     return render_template('ledzep.html'), 200
+
+@app.route('/lz4')
+def lz4():
+    return render_template('lz4.html'), 200
+
+@app.route('/physical')
+def phy():
+    return render_template('physical.html'), 200
+
+@app.route('/lz2')
+def lz2():
+    return render_template('lz2.html'), 200
 
 @app.route('/blacksab')
 def black():
