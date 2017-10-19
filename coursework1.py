@@ -52,5 +52,17 @@ def oas():
 def alt():
     return render_template('alt.html'), 200
 
+@app.route('/foo')
+def foo():
+    return render_template('foo.html'), 200
+
+@app.route('/nirvana')
+def nir():
+    return render_template('nirvana.html'), 200
+
+@app.route('/muse')
+def mus():
+    return render_template('muse.html'), 200
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', debug = True)
