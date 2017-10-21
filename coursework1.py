@@ -52,18 +52,44 @@ def self():
 def vol():
     return render_template('vol4.html'), 200
 
+#rage albums
 @app.route('/rage')
 def rage():
     return render_template('rage.html'), 200
+
+@app.route('/ragest')
+def st():
+    return render_template('ragest.html'), 200
+
+@app.route('/evilempire')
+def ee():
+    return render_template('evilempire.html'), 200
+
+@app.route('/battleofla')
+def la():
+    return render_template('battleofla.html'), 200
 
 # all bands in indie
 @app.route('/indie')
 def ind():
     return render_template('indie.html'), 200
 
+#all arctic monkeys
 @app.route('/arctic')
 def arc():
     return render_template('arctic.html'), 200
+
+@app.route('/fwn')
+def fwn():
+    return render_template('fwn.html'), 200
+
+@app.route('/humbug')
+def hum():
+    return render_template('humbug.html'), 200
+
+@app.route('/am')
+def am():
+    return render_template('am.html'), 200
 
 @app.route('/radio')
 def rad():
