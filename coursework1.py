@@ -35,9 +35,22 @@ def phy():
 def lz2():
     return render_template('lz2.html'), 200
 
+#black sabbath albums
 @app.route('/blacksab')
 def black():
-    return render_template('blacksab.html'),200
+    return render_template('blacksab.html'), 200
+
+@app.route('/paranoid')
+def para():
+    return render_template('paranoid.html'), 200
+
+@app.route('/selftitled')
+def self():
+    return render_template('selftitled.html'), 200
+
+@app.route('/vol4')
+def vol():
+    return render_template('vol4.html'), 200
 
 @app.route('/rage')
 def rage():
