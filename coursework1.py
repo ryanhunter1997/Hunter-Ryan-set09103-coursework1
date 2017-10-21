@@ -130,9 +130,22 @@ def tmp():
 def alt():
     return render_template('alt.html'), 200
 
+#all foo fighters
 @app.route('/foo')
 def foo():
     return render_template('foo.html'), 200
+
+@app.route('/foofighters')
+def ff():
+    return render_template('foofighters.html'), 200
+
+@app.route('/colourandtheshape')
+def cs():
+    return render_template('colourandtheshape.html'), 200
+
+@app.route('/inyourhonor')
+def iyh():
+    return render_template('inyourhonor.html'), 200
 
 @app.route('/nirvana')
 def nir():
