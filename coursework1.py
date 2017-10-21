@@ -91,13 +91,39 @@ def hum():
 def am():
     return render_template('am.html'), 200
 
+#all radiohead
 @app.route('/radio')
 def rad():
     return render_template('radio.html'), 200
 
+@app.route('/okcomputer')
+def ok():
+    return render_template('okcomputer.html'), 200
+
+@app.route('/inrainbows')
+def inr():
+    return render_template('inrainbows.html'), 200
+
+@app.route('/thebends')
+def theb():
+    return render_template('thebends.html'), 200
+
+#all oasis
 @app.route('/oasis')
 def oas():
     return render_template('oasis.html'), 200
+
+@app.route('/definitelymaybe')
+def dm():
+    return render_template('definitelymaybe.html'), 200
+
+@app.route('/whatsthestory')
+def wts():
+    return render_template('whatsthestory.html'), 200
+
+@app.route('/themasterplan')
+def tmp():
+    return render_template('themasterplan.html'), 200
 
 # all bands in alt
 @app.route('/alt')
