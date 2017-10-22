@@ -147,13 +147,40 @@ def cs():
 def iyh():
     return render_template('inyourhonor.html'), 200
 
+#all nirvana albums
 @app.route('/nirvana')
 def nir():
     return render_template('nirvana.html'), 200
 
+@app.route('/nevermind')
+def nev():
+    return render_template('nevermind.html'), 200
+
+@app.route('/inutero')
+def inu():
+    return render_template('inutero.html'), 200
+
+@app.route('/bleach')
+def ble():
+    return render_template('bleach.html'), 200
+
+#all muse albums
 @app.route('/muse')
 def mus():
     return render_template('muse.html'), 200
+
+@app.route('/absolution')
+def abs():
+    return render_template('absolution.html'), 200
+
+@app.route('/origin')
+def org():
+    return render_template('origin.html'), 200
+
+@app.route('/blackholes')
+def bla():
+    return render_template('blackholes.html'), 200
+
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', debug = True)
