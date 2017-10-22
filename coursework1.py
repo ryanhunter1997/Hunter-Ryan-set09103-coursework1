@@ -9,6 +9,13 @@ def root():
 def subgenre():
     return render_template('sub-genre.html'), 200
 
+@app.route('/sub-genre')
+def static_metal():
+    start = '<img src="'
+    url = url_for('static', filename='ledzeppelin.jpg')
+    end = '">'
+    return start+url+end, 200
+
 @app.route('/artists')
 def art():
     return render_template('artists.html'), 200
