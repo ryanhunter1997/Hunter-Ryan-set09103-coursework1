@@ -6,10 +6,12 @@
         body{
             padding-top: 50px;
         }
+        
+        img{ padding: 1em;
+        }
     </style>
 </head>
 <body>
-    <img src="home/ryan/webtech/coursework/static/ledzeppelin.jpg" alt="ledpic">
     <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
@@ -32,11 +34,33 @@
         </div>
     </div>
     </nav>
-
+    <!--code for each image and description of each genre-->
     <div class="conatiner">
     <h1>Sub Genres</h1>
-    <h2></h2>
-
+        <div>
+            <img src= "{{ url_for('static', filename='img/ledzeppelin.jpg')}}"  width=30% align=right >
+            <p><a href="http://0.0.0.0:5000/metal">Metal</a></p>
+            <p>Metal is a genre of rock music that developed in the late 1960s and early      
+            1970s, largely in the UK. With roots in blues and psychedelic rock, the 
+            bands that created metal developed a thick, massive sound, charactized
+            by highly amplified distortion, extended guitar solos, emphatic beats,
+            and overall loudness.</p>
+        </div>
+        <div>
+            <br><br><br><br>
+            <img src= "{{ url_for('static', filename='img/radiohead.jpg')}}"  width=30% align=right >
+            <p><a href="http://0.0.0.0:5000/indie">Indie</a></p>
+            <p>Indie rock is a genre of alternative rock that orginiated in the United States and the UK
+            in the 1980s. Orginally "Indie" was being independent from a record label and taking 
+            a do-it-yourself approach to publishing and recording music. During the 1990s Britpop bands
+            in the UK broke into the mainstream</p>
+        </div>
+        <div>
+            <br><br><br><br><br><br><br><br>
+            <img src= "{{ url_for('static', filename='img/foofighters.jpg')}}"  width=30% align=right >
+            <p><a href="http://0.0.0.0:5000/alt">Alternative</a></p>
+            <p>Alternative rock is a style of rock music that emerged from the independent music                     underground of the 1980s and became popular in the 1990s. At times alt rock has been used as             an umbrella description for undergorund rock music.</p>
+        </div>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
